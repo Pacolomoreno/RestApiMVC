@@ -1,0 +1,15 @@
+C:\Kodo\C\Oppgave\RestApiMVC\bin\Debug\net9.0\RestApiMVC.exe
+C:\Kodo\C\Oppgave\RestApiMVC\bin\Debug\net9.0\RestApiMVC.deps.json
+C:\Kodo\C\Oppgave\RestApiMVC\bin\Debug\net9.0\RestApiMVC.runtimeconfig.json
+C:\Kodo\C\Oppgave\RestApiMVC\bin\Debug\net9.0\RestApiMVC.dll
+C:\Kodo\C\Oppgave\RestApiMVC\bin\Debug\net9.0\RestApiMVC.pdb
+C:\Kodo\C\Oppgave\RestApiMVC\obj\Debug\net9.0\RestApiMVC.GeneratedMSBuildEditorConfig.editorconfig
+C:\Kodo\C\Oppgave\RestApiMVC\obj\Debug\net9.0\RestApiMVC.AssemblyInfoInputs.cache
+C:\Kodo\C\Oppgave\RestApiMVC\obj\Debug\net9.0\RestApiMVC.AssemblyInfo.cs
+C:\Kodo\C\Oppgave\RestApiMVC\obj\Debug\net9.0\RestApiMVC.csproj.CoreCompileInputs.cache
+C:\Kodo\C\Oppgave\RestApiMVC\obj\Debug\net9.0\RestApiMVC.sourcelink.json
+C:\Kodo\C\Oppgave\RestApiMVC\obj\Debug\net9.0\RestApiMVC.dll
+C:\Kodo\C\Oppgave\RestApiMVC\obj\Debug\net9.0\refint\RestApiMVC.dll
+C:\Kodo\C\Oppgave\RestApiMVC\obj\Debug\net9.0\RestApiMVC.pdb
+C:\Kodo\C\Oppgave\RestApiMVC\obj\Debug\net9.0\RestApiMVC.genruntimeconfig.cache
+C:\Kodo\C\Oppgave\RestApiMVC\obj\Debug\net9.0\ref\RestApiMVC.dll
