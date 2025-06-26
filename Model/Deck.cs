@@ -10,7 +10,7 @@ namespace RestApiMVC.Model
         private List<Card> _deck { get; init; } = new List<Card>();
 
 
-        public CardDeck()
+        public void SetFullDeck()
         {
             foreach (Suits suit in Enum.GetValues(typeof(Suits)))
             {
@@ -31,6 +31,12 @@ namespace RestApiMVC.Model
             _deck.RemoveAt(RandomIndex);
             Count--;
             return card;
+        }
+
+        public void SetCard(Card newCard)
+        {
+            _deck.Add(newCard);
+            Count++;
         }
     }
 
