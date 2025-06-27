@@ -6,12 +6,14 @@ using RestApiMVC.View;
 
 public static class BlackJack
 {
+    const int BustLimit = 21;
 
     public static void Start()
     {
-        CardDeck Baraja = new CardDeck();
-        List<Card> Mano = new List<Card>();
-        Baraja.SetFullDeck();
+        CardDeck GameDeck = new CardDeck();
+        CardDeck UserDeck = new CardDeck();
+        GameDeck.SetFullDeck();
+        bool Busted = false;
         Wellcome();
         if (UserInput.userChooseYN("Instructions Needed ? "))
             Game.ShowInstuctions("./Data/Rules.txt");
@@ -21,13 +23,17 @@ public static class BlackJack
         {
             Wellcome();
             CardTable.Banner("LETS  PLAY!");
-            Card Carta = Baraja.GetCard();
-            Mano.Add(Carta);
-            CardStack.ShowCards(Mano);
+            Card Carta = GameDeck.GetCard();
+            UserDeck.SetCard(Carta);
+            CardStack.ShowCards(UserDeck);
+            Console.Write($"Actual Score : {ScoreAceAdjust(UserDeck)}\n\n");
+            Busted = (ScoreAceAdjust(UserDeck) > BustLimit);
         }
-        while (Baraja.Count > 0 && UserInput.userChooseByInitial("What do you want ?", "hit,stand") == 'h');
+        while (!Busted && UserInput.userChooseByInitial("What do you want ?", "hit,stand") == 'h');
+        if (Busted) CardTable.Banner("BUSTED! YOU LOST");
 
-        if (Baraja.Count == 0) { Console.WriteLine("\nYou Finished all the cards in the stack"); }
+
+        if (GameDeck.Count == 0) { Console.WriteLine("\nYou Finished all the cards in the stack"); }
         else { Console.WriteLine("\nEnd of Game"); }
 
 
@@ -38,6 +44,17 @@ public static class BlackJack
         CardTable.Clean();
         CardTable.Banner("BLACK  JACK");
     }
+
+    public static int ScoreAceAdjust(CardDeck CardStacktoAdjust)
+    {
+        int AdjustedScore = CardStacktoAdjust.Score;
+        for (int i = 1; i <= CardStacktoAdjust.Aces; i++)
+        {
+            if (AdjustedScore > BustLimit) AdjustedScore -= 9;
+        }
+        return AdjustedScore;
+    }
+
 }
 
 

@@ -4,7 +4,7 @@ namespace RestApiMVC.View;
 
 public static class CardStack
 {
-    public static void ShowCards(List<Card> stack)
+    public static void ShowCards(CardDeck stack)
     {
         foreach (Card myCard in stack)
         {

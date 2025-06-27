@@ -28,6 +28,12 @@ public class UserInput
         return keyPressed;
     }
 
+
+    /// <summary>
+    /// Prompts with message and options for console user Y/N input 
+    /// </summary>
+    /// <param name="message">Question message to confirm or deny </param>
+    /// <returns>true if yes answered and false if no answered </returns>
     public static bool userChooseYN(string message)
     {
         Console.Write("\n" + message + "  [y] yes    [n] no  ");

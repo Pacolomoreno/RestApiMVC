@@ -1,14 +1,21 @@
 using System;
+using System.Collections;
 
 namespace RestApiMVC.Model
 {
-    public class CardDeck
+    public class CardDeck : IEnumerable<Card>
     {
 
         public const int TotalCards = 52;
         public int Count { get; set; } = 0;
         private List<Card> _deck { get; init; } = new List<Card>();
 
+        // Indexing [i]
+        public Card? this[int index]
+        {
+            get => _deck[index];
+            set => _deck[index] = value!;
+        }
 
         public void SetFullDeck()
         {
@@ -37,6 +44,29 @@ namespace RestApiMVC.Model
         {
             _deck.Add(newCard);
             Count++;
+        }
+
+
+        public int Total => _deck.Sum(card => card.CardValue);
+
+        public int Aces => _deck.Count(card => card.Rank == Ranks._1);
+
+        public int Score => _deck.Sum(card => card.CardValue);
+
+
+
+        // Ienumerator methods
+        public IEnumerator<Card> GetEnumerator()
+        {
+            foreach (var card in _deck)
+            {
+                yield return card;
+            }
+        }
+
+        IEnumerator IEnumerable.GetEnumerator()
+        {
+            return GetEnumerator();
         }
     }
 

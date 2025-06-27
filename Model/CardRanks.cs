@@ -2,7 +2,7 @@ namespace RestApiMVC.Model;
 
 public enum Ranks
 {
-    _1 = 1,
+    _1 = 10,
     _2 = 2,
     _3 = 3,
     _4 = 4,
@@ -12,7 +12,7 @@ public enum Ranks
     _8 = 8,
     _9 = 9,
     _10 = 10,
-    _J = 11,
-    _Q = 12,
-    _K = 13,
+    _J = 10,
+    _Q = 10,
+    _K = 10,
 }
