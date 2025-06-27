@@ -7,11 +7,11 @@ public class Card(Suits suit, Ranks rank, int cardValue)
     public Suits Suit { get; set; } = suit;
     public Ranks Rank { get; set; } = rank;
     public int CardValue { get; set; } = cardValue;
-    public char symbol => GetSuitSymbol();
+    public char symbol => GetSuitSymbol(Suit);
 
-    private char GetSuitSymbol()
+    static char GetSuitSymbol(Suits cardSuit)
     {
-        return Suit switch
+        return cardSuit switch
         {
             Suits.Hearts => '♥',
             Suits.Diamonds => '♦',

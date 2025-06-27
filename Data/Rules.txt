@@ -1,0 +1,31 @@
+Blackjack Rules – The Basics
+Blackjack (also called 21) is a popular casino card game where players compete against the dealer, not each other. The goal is to have a hand value closer to 21 than the dealer’s hand without going over (busting).
+
+1. Card Values
+(Ace) = 1 or 11     (2-10) = value      (J, Q, K) = 10 
+2. How to Play
+Players place bets.
+Bank deals 2 cards to the player sum values and decide  must hit or stand in closest value to 21 without busting over.
+Bank reveals his hand value and hands are compared—whoever is closer to 21 without busting wins and get reward while other lose it.
+
+3. Player Options
+Hit → Take another card.
+Stand → Keep your current hand.
+Double Down → Double your bet & take one more card.
+Split → If you have two of the same card, split them into two hands (must match original bet).
+Surrender (if allowed) → Give up half your bet and fold.
+
+4. Dealer Rules
+The dealer must hit if their hand is 16 or lower.
+The dealer must stand if their hand is 17 or higher (even a "soft 17" if the casino allows it).
+
+5. Winning & Payouts
+Blackjack (Ace + 10-value card) → Pays 3:2 (e.g., $10 bet wins $15).
+Regular win → Pays 1:1 (e.g., $10 bet wins $10).
+Push (tie) → Bet is returned.
+Dealer busts → All remaining players win.
+
+6. Special Rules
+Insurance (if dealer’s upcard is Ace) → Side bet (pays 2:1) if dealer has blackjack.
+Even Money (if you have blackjack & dealer shows Ace) → Take 1:1 payout instead of risking a push.
+Would you like any clarifications or advanced strategies?
