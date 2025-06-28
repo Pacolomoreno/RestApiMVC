@@ -8,7 +8,7 @@ namespace RestApiMVC.Model
 
         public const int TotalCards = 52;
         public int Count { get; set; } = 0;
-        private List<Card> _deck { get; init; } = new List<Card>();
+        private List<Card> _deck { get; set; } = new List<Card>();
 
         // Indexing [i]
         public Card? this[int index]
@@ -23,7 +23,16 @@ namespace RestApiMVC.Model
             {
                 foreach (Ranks rank in Enum.GetValues(typeof(Ranks)))
                 {
-                    _deck.Add(new Card(suit, rank, (int)rank));
+                    int points = rank switch
+                    {
+                        Ranks._J => 10,
+                        Ranks._Q => 10,
+                        Ranks._K => 10,
+                        Ranks._1 => 11,
+                        _ => (int)rank + 1
+                    };
+
+                    _deck.Add(new Card(suit, rank, points));
                     Count++;
                 }
             }
@@ -46,6 +55,11 @@ namespace RestApiMVC.Model
             Count++;
         }
 
+        public void Empty()
+        {
+            _deck = [];
+            Count = 0;
+        }
 
         public int Total => _deck.Sum(card => card.CardValue);
 

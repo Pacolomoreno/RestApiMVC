@@ -46,6 +46,10 @@ public class UserInput
         return (keyPressed == 'y');
     }
 
-
+    public static void PauseTilKeyPresed()
+    {
+        // Console.Write("Press any key ");
+        Console.ReadKey(intercept: true);
+    }
 
 }

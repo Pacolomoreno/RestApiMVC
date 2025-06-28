@@ -11,4 +11,9 @@ public static class CardTable
         Console.WriteLine("###############################################");
     }
 
+
+    public static void ShowWallet(int budget, int bet)
+    {
+        Console.WriteLine($"             {budget} $      Bet {bet} $");
+    }
 }
