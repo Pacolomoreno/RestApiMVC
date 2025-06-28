@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("RestApiMVC")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+eac0704372b9256ba5a6ab9c4f6f12dd5b127c1e")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+3fe414646b0899259e84f8a7cceaea3c655a0f3a")]
 [assembly: System.Reflection.AssemblyProductAttribute("RestApiMVC")]
 [assembly: System.Reflection.AssemblyTitleAttribute("RestApiMVC")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

@@ -29,7 +29,7 @@ public static class BlackJack
         // ASK IF INSTRUCTIONS IS NEEDED
         GameTitle();
         if (UserInput.userChooseYN("Instructions Needed ? "))
-            Game.ShowInstuctions("./Data/Rules.txt");
+            Game.ShowInstuctions("./Data/BlackJack.txt");
         do
         {
             // GAME STARTS

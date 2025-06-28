@@ -13,5 +13,12 @@ public static class CardStack
         Console.WriteLine("\n______________________________________________\n");
     }
 
+    public static void ShowCard(Card myCard)
+    {
+
+        Console.Write(char.ConvertFromUtf32(myCard.symbol) + myCard.Rank);
+
+    }
+
 
 }
